@@ -7,8 +7,8 @@ public class AppDbContext:DbContext
     public AppDbContext(DbContextOptions<AppDbContext>options):base(options){}
     public DbSet<User> Users=>Set<User>();
     public DbSet<Board> Boards=>Set<Board>();
-    public DbSet<BoardMember> boards=>Set<BoardMember>();
-    public DbSet<TaskItem> tasks=>Set<TaskItem>();
+    public DbSet<BoardMember> BoardMembers=>Set<BoardMember>();
+    public DbSet<TaskItem> Tasks=>Set<TaskItem>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
