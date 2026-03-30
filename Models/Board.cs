@@ -5,6 +5,7 @@ public class Board
     public string Code {get; set;}=String.Empty;
     public int OwnerId {get; set;}
     public User Owner {get; set;}=null!;
+    public User Leader {get; set;}=null!;
     public ICollection<TaskItem> Tasks {get; set;}=[];
     public ICollection<BoardMember> Members {get; set;}=[];
 }

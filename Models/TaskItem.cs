@@ -6,5 +6,6 @@ public class TaskItem
     public string Status {get; set;}=String.Empty;
     public int Order {get; set;}
     public int BoardId {get; set;}
+    public string AssignedTo {get; set;}=String.Empty;
     public Board Board {get; set;}=null!;
 }
